@@ -8,7 +8,7 @@
    /* background-image: url("https://dm0qx8t0i9gc9.cloudfront.net/thumbnails/image/rDtN98Qoishumwih/abstract-blurred-dark-background_7yTYY-_thumb.jpg"); */
     
 }
-.navbar{
+/*.navbar{
     position:fixed;
     background-color: rgb(243, 105, 54);
     width:100%;
@@ -54,6 +54,82 @@
     display: none;
 }
 /* home section styling */
+
+
+.nav1{
+    height: 80px;
+    background-color: rgb(243, 105, 54);
+    font-family: "Playfair Display";
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 100px;
+    width:100%;
+    position: fixed;
+}
+.nav1 .menubtn i{
+color:white;
+font-size: 40px;
+
+cursor: pointer;
+display:none;
+}
+.nav1 .logo a{
+    color:#fff;
+    font-size: 35px;
+    font-weight: 700;
+    font-family:lato ;
+}
+.nav1 ul{
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    font-family:Ubuntu ;
+    font-weight: 900;
+}
+.nav1 ul li{
+    margin: 0 50px;
+   
+}
+.nav1 ul li > ul{
+    display: none;
+    flex-direction: column;
+}
+.nav1 ul li> ul li{
+    position: relative;
+width: 100%;
+margin-left: -5px;
+padding:30;
+
+}
+.nav1 ul li:hover > ul{
+    display: flex;
+  
+}
+.nav1 ul li a{
+    color:cornsilk;
+    text-decoration: none;
+    font-size: 18px;
+  
+   letter-spacing: 1px;
+    padding:8px 4px;
+    border-radius: 5px;
+   
+    transition:all 0.3s ease;
+}
+.nav1 ul li a:hover,.nav1 ul li a.active{
+    background-color: none;
+    color: rgb(243, 105, 54);
+}
+#click{
+    display: none;
+}
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+
+
 .home{
    display: flex; 
    background: url("img1.PNG") no-repeat center  ;
@@ -89,6 +165,52 @@
 }
 
 @media(max-width:940px){
+    .nav1 ul{
+        position: fixed;
+        top:80px;
+        left:-100%;
+        padding-top:80px;
+        background-color: #111;
+        height:100vh;
+        width: 100%;
+        display: block;
+        text-align: center;
+        transition: all 0.3s ease;
+        z-index: 1;
+        overflow:hidden;
+       
+    }
+  
+    #click:checked ~ ul{
+        left:0% ;
+        
+        
+    } 
+   
+  
+    .nav1 ul li{
+        margin:40px 0;
+
+    }
+    .nav1 ul li a{
+        font-size: 20px;
+    }
+    .nav1 .menubtn{
+        margin-right: -20px;
+    }
+    .nav1 .menubtn i{
+        display: block;
+    }
+    .nav1 .logo{
+       
+        transform: scale(0.8);
+        
+    }
+    
+}
+
+
+/*@media(max-width:940px){
 
     .menu-btn{
        
@@ -150,8 +272,6 @@
         color:orangered;
         font-weight: 500;
     }
-    @media(max-width:320px) {
-       
-    }
+  
     
-}
+}*/
