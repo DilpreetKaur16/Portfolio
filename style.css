@@ -206,6 +206,28 @@ padding:30;
         transform: scale(0.8);
         
     }
+    .home .home-content .text-1{
+        font-size: 45px;
+        font-family: Parisienne;
+        font-weight: 500;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;
+        font-weight: 600;
+        margin-left: -3px;
+        font-family:"Great Vibes";
+    }
+    .home .home-content .text-3{
+        font-size: 45px;
+        margin:5px 0;
+        font-weight: 500;
+        font-family: Parisienne;
+    }
+    .home .home-content .text-3 span{
+        color:orangered;
+        font-weight: 500;
+    }
+
     
 }
 
