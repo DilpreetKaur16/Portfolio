@@ -210,56 +210,55 @@ color: #000;
 section{
     padding:0 100px
 }
-.about{
+.about, .collection, .skills{
     font-family: 'Lato';
     z-index:-2;
 
 }
-.about .heading{
+.about .heading , .collection .heading, .skills .heading{
     font-family: 'Lato';
     text-align: center;
     font-size: 40px;
-    
-    padding: 50px 50px 20px 50px; 
-    letter-spacing: 1px;
+   padding-top:50px;
     position: relative;
 
 }
 
-.about .heading::before{
+.about .heading::before, .collection .heading::before{
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: -10px;
     left:50%;
     
-    width: 180px;
+    width: 200px;
     height: 3px;
     background: #111;
     
     transform: translateX(-50%);
 }
-.about .heading::after{
+.about .heading::after {
     content: "who I am";
     position: absolute;
-    bottom: -10px;
+    bottom: -20px;
     left:50%;
    font-size: 20px;
    color: rgb(243, 105, 54);;
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+.about .about-content, .collection .collect-content, .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
      align-items: center;
      justify-content: space-between;
-     max-width:100%;
+     width:100%;
 }
 
 
 
 .about .about-content .left-col{
     width:45%;
+    margin:0;
 }
 .about .about-content .left-col img{
     height:500px;
@@ -278,15 +277,18 @@ margin-bottom: 10px;
 .about .about-content .right-col .text span{
 color:rgb(243, 105, 54);      
 }
-.about .about-content .right-col p{
-    text-align: justify;
+.about .about-content .right-col .para{
+    text-align:justify ;
+  margin:0;
+  padding:0;
+  
 }
 .about .about-content .right-col a{
     display: inline-block;
     background:rgb(238, 98, 47); 
     color:#fff;
     font-size:17px;
-    margin:20px 0px;
+    margin:10px 0px;
     padding:12px 37px;
     border-radius: 12px;
     border: 2px solid rgb(12, 9, 8);
@@ -300,23 +302,169 @@ color:rgb(243, 105, 54);
     transform: scale(1.1);
     background:rgb(235, 86, 31);
 }
+.collection{
+    background-color: #111;
+    color:#fff;
+    margin-bottom: 30px;
+}
 
+.collection .heading::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    
+    width: 300px;
+    height: 3px;
+    background: #fff;
+    
+    transform: translateX(-50%);
+}
+.collection .heading::after {
+    content: "what I made";
+    position: absolute;
+    bottom: -20px;
+    left:50%;
+   font-size: 20px;
+   color: rgb(243, 105, 54);;
+    background: #111;
+    transform: translateX(-50%);
+}
+.collection .collect-content .card{
+    margin:60px 5px;
+    width:calc(33% - 20px);
+    background-color: #222;
+    text-align: center;
+    border-radius: 10px;
+    padding: 40px 25px;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
 
+.collection .collect-content .card a{
+    text-decoration: none;
+    color:white;
+}
+.collection .collect-content .card i{
+    font-size: 50px;
+    color:rgb(243, 105, 54);
+   padding:20px;
 
+}
 
+.collection .collect-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin:20px;
+}
 
+.collection .collect-content .card:hover .box{
+    transform: scale(1.05);
+}
 
+.collection .collect-content .card:hover{
+    background:#CF4A04;
 
+}
+.collection .collect-content .card:hover i{
+    color:#fff;
+}
 
+.skills .heading::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left:50%;
+    
+    width: 300px;
+    height: 3px;
+    background: #111;
+    
+    transform: translateX(-50%);
+}
+.skills .heading::after {
+    content: "what I know";
+    position: absolute;
+    bottom: -20px;
+    left:50%;
+   font-size: 20px;
+   color: rgb(243, 105, 54);;
+    background: #fff;
+    transform: translateX(-50%);
+}
+/*
+.skills .skills-content .myskills{
+    width:calc(50% - 30px)
+}
+.skills .skills-content .myskills .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top:70px;
+}  
 
+.skills .skills-content .bars .info  {
+   margin-left: -100%;
+   
+}
+.skills .skills-content .myskills{
+    margin-top:100px;
+}
+.skills .skills-content .myskills .bars{
+    margin-bottom: 12px;
+}
+.skills .skills-content .myskills  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .myskills span{
+font-weight: 500;
+font-size: 18px;
+}
+.skills .skills-content .myskills .line{
+    height:5px;
+    width:100%;
+    background: lightgray;
+}*/
 
+.skills .skills-content .myskills .info  span{
+    
+    padding-right: 30px;
 
+} 
+.skills .skills-content .myskills{
+    margin-left: 30%;
+}
+.skills .skills-content .myskills  .info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:30px;
+   
+  
+}
+.skills .skills-content .myskills .info  span{
+    
+    padding-right: 300px;
+ 
 
+} 
+.skills .skills-content .myskills span{
+    font-weight: 600;
+    font-size: 18px;
+}
 
+.skills .skills-content .myskills .line{
+    height:5px;
+    width:50%;
+    background: lightgray;
+}
 
-
-
-@media(max-width:1125px){
+@media(max-width:1115px){
+    .home .home-content{
+        margin-left: 30px;
+    }
     .home .compheader{
         margin-left: 0px;
     }
@@ -358,17 +506,59 @@ color:rgb(243, 105, 54);
         display: block;
         font-size: 30px;
     }
+    .about .about-content .right-col .text{
+        margin:0;
+        padding:0;
+    }
     .about .about-content .right-col{
-        width:50%;
+        width:100%;
     }
         
     .about .about-content .left-col{
-        width:50%;
+        width:100%;
     }
    
+    .about .about-content .left-col img{
+        height:auto;
+        width:auto;  
+        object-fit: contain;
+        margin-left: 22%;
+        padding:30px;
+    
+    }
 
+    .collection .collect-content .card{
+        
+        width:calc(50% -20px);
+       
+        padding:15px;
+        cursor:pointer;
+        transition: all 0.3s ease;
+    }
+    .collection .collect-content .card i{
+       padding:5px;
+    }
+    
+    .collection .collect-content .card .text{
+        font-size: 25px;
+        font-weight: 500;
+        margin:15px;
+    }
+    
+    .collection .collect-content .card:hover .box{
+        transform: scale(1.05);
+    }
+    
+    .collection .collect-content .card:hover{
+        background:#CF4A04;
+    
+    }
+    .collection .collect-content .card:hover i{
+        color:#fff;
+    }
 }
-@media(max-width:725px){
+
+@media(max-width:825px){
     
     .home{
         margin:0;
@@ -378,7 +568,7 @@ color:rgb(243, 105, 54);
     .nav1 .logo a{
         margin-left: -70px;
     }
-  .home .home-content .text-1{
+        .home .home-content .text-1{
         font-size: 27px;
         font-family: Parisienne;
         font-weight: 600;
@@ -412,51 +602,99 @@ color:rgb(243, 105, 54);
         flex-wrap: wrap;
         flex-direction: column;
          align-items: center;
-         justify-content: space-between;
+         justify-content: center;
         width:100%;
-         margin:0 !important;
-         padding:0 !important;
+         
     }
-    .about .about-content .left-col{
-        width:100%;
+
+    .about{
+        font-family: 'Lato';
+        z-index:-2;
+       margin:10px 30px ;
+       padding:0;
     }
+    .about .heading{
+            font-size: 30px;
+
+    }
+    
+    .about .heading::before{
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left:50%;
+        
+        width: 180px;
+        height: 3px;
+        background: #111;
+        
+        transform: translateX(-50%);
+    }
+    .about .heading::after{
+        content: "who I am";
+        position: absolute;
+        bottom: -20px;
+      
+        left:50%;
+       font-size: 20px;
+       color: rgb(243, 105, 54);;
+        background: #fff;
+        transform: translateX(-50%);
+    }
+    .about .about-content{
+        display: flex;
+        flex-wrap: wrap;
+      
+    }
+
+   
     .about .about-content .left-col img{
         height:auto;
         width:auto;
+        
         object-fit: cover;
         border-radius: 10px;
+        margin:20px 0px;
     }
-    .about .about-content .right-col{
-       flex:100%;
-       width: 100%;
-    }
+   
     .about .about-content .right-col .text{
     font-size: 25px;
     font-weight: 600;
     margin:0px 0px 10px 0px;
-    padding:0;
+    padding:0px;
     }
+
     .about .about-content .right-col .text span{
     color:rgb(243, 105, 54);      
     }
-    .about .about-content .right-col p{
-        text-align: justify;
-        margin:0;
-        padding:0;
+    .about .about-content .right-col .para{
+     
+        margin:0%;
+        padding:0px;
     }
     .about .about-content .right-col a{
         display: inline-block;
         background:rgb(238, 98, 47); 
         color:#fff;
-        font-size:17px;
-        margin:20px 0px;
-        padding:12px 37px;
+        font-size:10px;
+      margin-left: 70px;
+
         border-radius: 12px;
         border: 2px solid rgb(12, 9, 8);
         transition: all 0.3s ease;
         font-family:Lato ;
         font-weight: 500;
+        width:130px;
+        height:30px
         
+    }
+
+    .about .about-content .right-col a .text{
+        font-size: 8px;
+      
+  text-align: center;
+   
+
     }
     .about .about-content .right-col a:hover{
         color:#fff;
@@ -464,8 +702,84 @@ color:rgb(243, 105, 54);
         background:rgb(235, 86, 31);
     }
     
+    .about .about-content .left-col img{
+        margin-left:0px;
+      }
+      .collection{
+        
+       margin:10px 30px ;
+       padding:0;
+       
+    }
+      .collection .heading{
+        font-size: 30px;
+      }
+
+      .collection .heading::before{
+        bottom: -10px;
+        width: 230px;
+        height: 3px;
+    }
+    .collection .heading::after{
+        bottom: -20px;
+      
+        left:50%;
+       font-size: 20px;
+       color: rgb(243, 105, 54);;
+     
+        transform: translateX(-50%);
+       
+    }
+    .collection .collect-content .card{
+        
+        width:100%;
+        margin:50px 15px 0px 15px;
+        padding:15px;
+        cursor:pointer;
+        transition: all 0.3s ease;
+    }
+    .collection .collect-content .card i{
+       padding:5px;
+    }
+    
+    .collection .collect-content .card .text{
+        font-size: 25px;
+        font-weight: 500;
+        margin:15px;
+    }
+    
+    .collection .collect-content .card:hover .box{
+        transform: scale(1.05);
+    }
+    
+    .collection .collect-content .card:hover{
+        background:#CF4A04;
+    
+    }
+    .collection .collect-content .card:hover i{
+        color:#fff;
+    }
     
 
+    .skills .heading::before{
+        bottom: -10px;
+        width: 230px;
+        height: 3px;
+    }
+    .skills .heading::after{
+        bottom: -20px;
+      
+        left:50%;
+       font-size: 14px;
+       color: rgb(243, 105, 54);;
+     
+        transform: translateX(-50%);
+       
+    }
+
+    .skills .skills-content .myskills{
+width: 100%;
+    }
 }
 
 
