@@ -5,6 +5,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
     <title> Dilpreet's Portfolio Website</title> 
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -36,11 +37,11 @@
            <i class ="fa fa-bars" aria-hidden="true"></i>
         </label>
         <ul>
-            <li><a  href="mission.html"> Home </a></li>
-            <li ><a href="gallery.html">About </a>  </li>
-            <li><a href="follow.html"> Collection </a></li>
-            <li><a href="about.html"> Skills </a></li>
-            <li><a href="audiencee.html"> Contact </a></li>
+            <li><a  href="#home" class="menubtn" > Home </a></li>
+            <li ><a href="#about" class="menubtn"  >About </a>  </li>
+            <li><a href="#collection" class="menubtn"  > Collection </a></li>
+            <li><a href="#Dskills" class="menubtn" > Skills </a></li>
+            <li><a href="#contact" class="menubtn"  > Contact </a></li>
         </ul>
     </nav>
 
@@ -52,7 +53,7 @@
     <div class="home-content">
         <div class="text-1">Hello, my name is</div>
         <div class="text-2">Dilpreet Kaur Chugh</div>
-        <div class="text-3">And I am a <span> <b>Web Developer</b></span></div>
+        <div class="text-3">And I aspire to be a <span > <b> Developer </b></span></div>
         <a href="#"> Hire me  </a>
     </div>
 </div>
@@ -63,12 +64,12 @@
         <h2 class="heading"> About Me </h2>
         <div class="about-content">
             <div class="left-col" >
-                <img src="images/mypic.jpg"/>
+                <img src="images/mypic.jpg" style="object-fit: cover;"/>
             </div>
             <div class="right-col" >
-                <div class="text">I'm Dilpreet and I aspire to be <span> Web Developer</span></div>
-                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas sapiente necessitatibus officia mollitia dolor impedit voluptates, cumque quam quibusdam est quia rem nulla tempore, inventore illo quod quo recusandae! Ad, natus. Voluptas deleniti, excepturi architecto iure labore provident suscipit laboriosam quod tempore nesciunt? Eligendi accusantium magnam esse rem natus qui totam odio exercitationem asperiores, facilis quo molestias impedit, eaque aperiam!</p>
-                <a href="#"><p class="text"> Download CV </p></a>
+                <div class="text">I'm Dilpreet and I aspire to be <span> Developer</span></div>
+                <p class="para" style="font-size: 20px; line-height: 27px;"> I am presently working as a Coding Instructor at Professional Level in WhiteHat Jr. I define myself as very ambitious, passionate and dedicated person who never gives up.<span style="color:rgb(243, 105, 54)"> <b> I am seeking for part time or full time opportunity to start by career in the software sector. I love learning, I have great interest in developing Websites, Apps and Games.</b></span> "A day isn't spent worthly if we haven't tried anything new" is my idealogy. Quotes which always inspire me the most are "Arise Awake And Stop Not Till The Goal Is Reached" By Mr. Swami Vivekananda and "If you want to shine like a sun, first burn like a sun." By Mr. A.P.J Abdul Kalam </p>
+                <a href="Dilpreet_Profile.pdf" target="_blank"><p class="text"> Download CV </p></a>
             </div>
         </div>
     </div>
@@ -79,29 +80,29 @@
     <div class="comheader1">
         <h2 class="heading">My Collection</h2>
         <div class="collect-content">
-            <div class="card">
+            <div class="card" >
               <a href="#">  <div class="box">
                     <i class="fa fa-paint-brush" aria-hidden="true"></i>
                     <div class="text"> Website Designing </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, in iure molestiae magnam voluptatibus deserunt.</p>
+                    <p> Check out my made websites on various domains such as Space Technology, E-commerce, Covaxine, Origami. Looking forward to make many more.</p>
                 </div>  </a>
             </div>
 
-            <div class="card">
+            <div class="card" >
                <a href="#"> <div class="box">
                     <i class="fa fa-film" aria-hidden="true"></i>
 
                     <div class="text"> Apps Development</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, in iure molestiae magnam voluptatibus deserunt.</p>
+                    <p>Do check on my made Apps on various domains</p>
                 </div> </a>
             </div>
 
             
-           <div class="card" style="margin-bottom: 30px;">
+           <div class="card" id="gamee">
         <a href="#" > <div class="box" >
                     <i class="fa fa-gamepad" aria-hidden="true"></i>
                     <div class="text">Games Development</div>
-                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, in iure molestiae magnam voluptatibus deserunt.</p>
+                    <p > Look at my work of making logical, interesting and infinite runner games using p5 play.js, matter.js etc. </p>
                 </div>
             </div>  </a>
 
@@ -113,7 +114,15 @@
     <div class="skills">
         <h2 class="heading">My Skills</h2>
         </div>
-      
+      <div class="full">
+
+        <div class="leftside">
+
+
+        </div>
+
+
+        <div class="rightside">
         <div class="skill-bars" style=" margin-top: 50px;">
             <div class="bar">
               <div class="info">
@@ -157,17 +166,85 @@
               </div>
             <div class="bar">
               <div class="info">
-                <span>MySQL</span>
+                <span>Databse (MySQL,Firebase)</span>
               </div>
               <div class="progress-line mysql">
                 <span></span>
               </div>
             </div>
           </div>
+          </div>
+          </div>
 </section>
 
+<section class="contact" id="contact" >
+    <div class="compheader">
+        <h2 class="heading" style="font-size: 30px;"> Contact Me </h2>
+        <div class="contact-content" style="margin-top: 40px;">
+           <div class="column left"> 
+      <!--  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit cum fugit hic a quaerat repudiandae optio inventore libero, quasi ipsum!</p>-->
+        <div class="icons">
+            <div class="row">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <div class="info">
+                    <div class="head">Name:</div>
+                    <div class="sub-title">Dilpreet Kaur Chugh</div>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <div class="info">
+                    <div class="head">Address:</div>
+                    <div class="sub-title">Hyderabad, India</div>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <div class="info">
+                    <div class="head">Mobile No:</div>
+                    <div class="sub-title">+91 9573118625</div>
+                </div>
+            </div>
+            <div class="row">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <div class="info">
+                    <div class="head">Email:</div>
+                    <div class="sub-title">dilpreetkaur1606@gmail.com</div>
+                </div>
+            </div>
+           
+        </div>
+</div>
+<div class="column right">
+    <div class="text" style="  font-family: 'Lato'; color:rgb(235, 86, 31); font-size: 30px;margin-bottom: 20px;"> Your Feedback </div>
+    <form action="#">
+        <div class="fields">
+            <div class="field name">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="field email">
+                <input type="email" placeholder="E-mail" required>
+            </div>
+            
+           
+           <div class="field textarea">
+               <textarea cols="30" rows="20" placeholder="Description" required></textarea>
+           </div>
+            <div class="button">
+                <button type="Submit"> Send Message </button>
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+</div>
+</div>
+
+ </section>
 
 <!--Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus maxime, quae a praesentium expedita autem totam dicta, doloribus aliquam eos dolorum! Ullam inventore sint earum, quia eveniet minima quae consequuntur?</p>-->
-<script src="script.js"></script>
+<footer>
+  <span> Created By <a href="#"> Dilpreet Kaur Chugh </a>  </span>
+</footer>
 </body>
 </html>
