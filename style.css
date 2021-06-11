@@ -230,6 +230,16 @@ section{
 .about .about-content .right-col{
     width: 55%;
 }
+.about .about-content .right-col .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin:0px 0px 10px 0px;
+    padding:10px;
+    }
+
+    .about .about-content .right-col .text span{
+    color:rgb(243, 105, 54);      
+    }
 
 .about .about-content .right-col .button button{
     width: 30%;
@@ -372,8 +382,8 @@ color: rgb(216, 73, 21);
     margin-bottom: 5px;
   }
   .skill-bars .bar .info span{
-    font-weight: 500;
-    font-size: 17px;
+    font-weight: 600;
+    font-size: 15px;
     opacity: 0;
     animation: showText 0.5s 1s linear forwards;
   } 
@@ -424,7 +434,8 @@ color: rgb(216, 73, 21);
     width: 80%;
   }
   .bar .progress-line.mysql span{
-    width: 70%;
+      font-size: 15px;
+    width: 75%;
   }
   .progress-line span::before{
     position: absolute;
@@ -797,16 +808,7 @@ footer span a{
         margin:20px 0px;
     }
  
-    .about .about-content .right-col .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin:0px 0px 10px 0px;
-    padding:10px;
-    }
-
-    .about .about-content .right-col .text span{
-    color:rgb(243, 105, 54);      
-    }
+   
     .about .about-content .right-col .para{
      
         margin:0%;
