@@ -15,10 +15,61 @@ html{
     margin:0;
     padding:0;
 }
+.menu{
+    padding:0 30px 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-column-gap: 25px;
+}
+.heading{
+    background-color: black;
+    color:#f3f3f3;
+    text-align: center;
+    grid-column: 1/-1;
+    margin-bottom: 30px;
+}
+.items{
+    display: grid;
+    position: relative;
+    grid-template-rows: auto 1fr ;
+   
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0 0 0 0.3);
+}
+.items img{
+    position: relative;
+    width:100%;
+   overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+
+}
+.details{
+ 
+    display: grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap:10px;
+   
+    
+}
+.details > p{
+padding:15px 0 15px 0;
+color:black;
+font-size: 20px;
+font-weight: 400;
+align-items: stretch;
+
+
+}
+
 
 .nav1{
     height: 80px;
-    background-color: rgb(247, 99, 45);
+    background-color: #d1520d;
     font-family: "Playfair Display";
     font-size: 24px;
     display: flex;
