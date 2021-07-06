@@ -16,7 +16,7 @@ html{
     padding:0;
 }
 .menu{
-    padding:0 30px 30px 30px;
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     grid-column-gap: 25px;
@@ -29,12 +29,18 @@ html{
     margin-bottom: 30px;
 }
 .items{
+    max-width: 100%;
     display: grid;
     position: relative;
     grid-template-rows: auto 1fr ;
    
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0 0 0 0.3);
+  
+}
+#item2{
+    margin-top: 15%;
+
 }
 .items img{
     position: relative;
@@ -634,9 +640,14 @@ height:180px;
 background-color: lightgray;
 color: rgb(216, 73, 21);
 }
-
+.upper{
+    margin:0;
+    padding:0;
+    max-width: 100%;
+}
 footer{
-    width:100%;
+    max-width:100%;
+   
     background: #111;
     padding: 20px 17px;
     color:#fff;
@@ -644,6 +655,9 @@ footer{
     font-size: 25px;
 }
 footer span a{
+    margin:0%;
+    padding: 0%;
+    max-width:100%;
     text-decoration: none;
     color:rgb(216, 73, 21); ;
 }
@@ -762,6 +776,9 @@ footer span a{
         margin:0;
         padding:0;
     
+    }
+    #item2{
+        margin-top: 0;
     }
     .nav1 ul li a:hover,.nav1 ul li a.active{
        
@@ -1008,7 +1025,8 @@ footer span a{
         font-size: 14px;
     }
     footer{
-        margin-top: 150px;
+         margin-top: 40%;
+        max-width: 100%;
         font-size: 20px;
     }
 
