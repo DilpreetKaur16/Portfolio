@@ -144,7 +144,7 @@ padding:30;
     display: none;
 }
 #click:checked ~ .menu-btn i:before{
-    content: "&#x2716";
+    content: "";
 }
 
 .home .home-content .text-1{
@@ -692,8 +692,6 @@ footer span a{
         
         
     } 
-    
-  
     .nav1 ul li{
         margin:40px 0;
 
@@ -783,7 +781,9 @@ footer span a{
     .nav1 ul li a:hover,.nav1 ul li a.active{
        
         color:rgb(247, 99, 45);
+       
     }
+
     .nav1 .logo a{
         margin-left: -70px;
     }
